@@ -99,6 +99,24 @@ h1 { margin: 0.3rem 0 0.8rem; line-height: 1.18; font-size: clamp(1.85rem, 4.4vw
 }
 .placeholder-box.tall { min-height: 320px; }
 
+.hero-logo {
+  width: min(280px, 80%);
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: drop-shadow(0 8px 22px rgba(0,0,0,.35));
+}
+
+.app-shot {
+  width: 100%;
+  aspect-ratio: 9 / 19.5;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: var(--shadow);
+  background: rgba(11, 15, 25, 0.35);
+}
+
 .features, .explain, .content-section { padding: 1.2rem 0 1.6rem; }
 .card-grid {
   display: grid;
