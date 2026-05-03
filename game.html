@@ -4,100 +4,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Game Details | Chess Puzzle Sprint</title>
-  <meta name="description" content="Discover how Chess Puzzle Sprint works: fast sessions, 200,000+ puzzles, offline mode, and tactical training from beginner to advanced levels." />
+  <meta name="description" content="Discover how Chess Puzzle Sprint helps players improve chess intuition, tactical vision, and pattern recognition through fast offline puzzle training." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" id="siteHeader">
     <div class="container nav-wrap">
-      <a class="logo" href="index.html" aria-label="Chess Puzzle Sprint home">Chess Puzzle Sprint</a>
-      <nav aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Chess Puzzle Sprint home">
+        <img src="assets/logo.png" alt="Chess Puzzle Sprint app logo featuring a marble rook, electric lightning, and gold frame" class="brand-logo" />
+        <span class="brand-text">Chess Puzzle Sprint</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="mainNav" class="site-nav" aria-label="Main navigation">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="game.html" aria-current="page">Game Details</a></li>
         </ul>
+        <a class="btn btn-primary nav-cta" href="https://play.google.com/store/apps/details?id=YOUR_APP_PACKAGE_NAME" target="_blank" rel="noopener noreferrer">Get on Google Play</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="page-hero">
-      <div class="container narrow">
-        <h1>Chess Puzzle Sprint</h1>
-        <p>
-          Chess Puzzle Sprint is a fast tactical training app focused on one goal: making your over-the-board decisions faster and stronger through high-volume puzzle practice.
-        </p>
-      </div>
-    </section>
-
-    <section class="content-section">
-      <div class="container narrow">
-        <h2>How it works</h2>
-        <p>
-          Open the app, start a sprint, and solve as many puzzles as you can in short bursts. The app presents positions across tactical themes and ratings, helping you identify patterns quickly under light pressure.
-        </p>
-      </div>
-    </section>
-
-    <section class="content-section alt">
-      <div class="container narrow">
-        <h2>Who is it for?</h2>
-        <p>
-          It is built for ambitious improvers, club players, and serious learners who want practical daily training. The puzzle range supports everyone from beginner to advanced competitors.
-        </p>
-      </div>
-    </section>
-
-    <section class="content-section">
-      <div class="container narrow">
-        <h2>Main features</h2>
-        <ul class="feature-list">
-          <li>Fast chess puzzle solving for focused sessions</li>
-          <li>Designed to strengthen practical chess intuition</li>
-          <li>Offline mode for uninterrupted training</li>
-          <li>Free to play</li>
-          <li>More than 200,000 puzzles</li>
-          <li>Difficulty from beginner to advanced</li>
-          <li>Clean, distraction-free interface</li>
-          <li>Available on Google Play</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="content-section alt">
-      <div class="container narrow">
-        <h2>Why it helps improve chess intuition</h2>
-        <p>
-          Intuition is not guesswork—it is memory and pattern recognition built through repetition. Chess Puzzle Sprint compresses high-quality repetitions into short daily sessions so tactical motifs become familiar and actionable in real games.
-        </p>
-      </div>
-    </section>
-
-    <section class="content-section">
-      <div class="container">
-        <h2>App Screenshots</h2>
-        <div class="screenshot-grid" aria-label="Gameplay screenshots">
-          <img src="assets/screen-1.webp" alt="Home screen of Chess Puzzle Sprint" class="app-shot" />
-          <img src="assets/screen-2.webp" alt="Puzzle gameplay in progress" class="app-shot" />
-          <img src="assets/screen-3.webp" alt="Puzzle sprint results summary" class="app-shot" />
+    <section class="section-pad page-hero">
+      <div class="container split-block align-center">
+        <div>
+          <p class="badge">Fast puzzle training for sharper chess instincts</p>
+          <h1>Chess Puzzle Sprint</h1>
+          <p>Fast tactical training for players who want sharper instincts, faster decisions, and consistent daily practice.</p>
         </div>
+        <div class="inline-logo-card"><img src="assets/logo.png" alt="Chess Puzzle Sprint premium app logo" class="inline-logo" /></div>
       </div>
     </section>
 
-    <section class="final-cta">
-      <div class="container narrow">
-        <h2>Ready to train at speed?</h2>
-        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=YOUR_APP_PACKAGE_NAME" target="_blank" rel="noopener noreferrer">Get it on Google Play</a>
-      </div>
-    </section>
+    <section class="section-pad"><div class="container content-card"><h2>Gameplay</h2><p>Chess Puzzle Sprint gives players short, intense chess puzzle sessions. The goal is to solve quickly, stay accurate, and train tactical pattern recognition through repeated exposure.</p></div></section>
+
+    <section class="section-pad"><div class="container"><h2>How it works</h2><div class="step-grid"><article class="card step-card"><span class="step-no">1</span><h3>Start a sprint</h3><p>Launch a focused session whenever you have a few minutes.</p></article><article class="card step-card"><span class="step-no">2</span><h3>Solve puzzles quickly</h3><p>Find tactical ideas under practical time pressure.</p></article><article class="card step-card"><span class="step-no">3</span><h3>Review your tactical sharpness</h3><p>Track consistency and reinforce key motifs over time.</p></article></div></div></section>
+
+    <section class="section-pad"><div class="container"><h2>Who it is for</h2><div class="feature-grid"><article class="card"><h3>Beginners</h3><p>Build tactical foundations through structured repetition.</p></article><article class="card"><h3>Club players</h3><p>Improve pattern recognition and speed up calculation choices.</p></article><article class="card"><h3>Advanced players</h3><p>Maintain daily sharpness and tactical precision under pressure.</p></article><article class="card"><h3>Offline trainers</h3><p>Practice anywhere without relying on internet connection.</p></article></div></div></section>
+
+    <section class="section-pad"><div class="container"><h2>Main features</h2><ul class="feature-bullets"><li>Offline mode</li><li>Free to play</li><li>200,000+ puzzles</li><li>Beginner to advanced difficulty</li><li>Fast puzzle sessions</li><li>Clean focused interface</li><li>Google Play availability</li><li>Practical intuition training</li></ul></div></section>
+
+    <section class="section-pad"><div class="container quote-panel"><h2>Why it improves intuition</h2><blockquote>“Intuition is pattern recognition under pressure.”</blockquote><p>Fast repetition strengthens tactical memory, candidate move speed, and board vision when decisions matter.</p></div></section>
+
+    <section class="section-pad"><div class="container"><h2>Preview Screens</h2><div class="mockup-grid" aria-label="App preview placeholders"><article class="phone-mockup"><div class="phone-notch"></div><div class="phone-screen">Home Screen</div></article><article class="phone-mockup"><div class="phone-notch"></div><div class="phone-screen">Puzzle Sprint</div></article><article class="phone-mockup"><div class="phone-notch"></div><div class="phone-screen">Results Summary</div></article></div></div></section>
+
+    <section class="section-pad"><div class="container cta-panel"><h2>Ready to build tactical intuition?</h2><p>Train faster. Think sharper. Keep your tactical edge active every day.</p><div class="hero-actions center-actions"><a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=YOUR_APP_PACKAGE_NAME" target="_blank" rel="noopener noreferrer">Get it on Google Play</a><a class="btn btn-secondary" href="index.html">Back to Home</a></div></div></section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Chess Puzzle Sprint</p>
-    </div>
-  </footer>
-
+  <footer class="site-footer"><div class="container"><p>© <span id="year"></span> Chess Puzzle Sprint</p></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
