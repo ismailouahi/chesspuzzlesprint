@@ -108,8 +108,9 @@ h1 { margin: 0.3rem 0 0.8rem; line-height: 1.18; font-size: clamp(1.85rem, 4.4vw
 }
 
 .app-shot {
-  width: 100%;
-  max-width: 320px;
+  width: min(78vw, 220px);
+  max-height: 460px;
+  height: auto;
   justify-self: center;
   aspect-ratio: 9 / 19.5;
   object-fit: cover;
