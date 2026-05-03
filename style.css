@@ -1,0 +1,138 @@
+:root {
+  --bg: #0b0f19;
+  --bg-soft: #121a2a;
+  --card: #161f33;
+  --text: #ecf1ff;
+  --muted: #b8c3e0;
+  --accent: #6ea8fe;
+  --accent-2: #7fffd4;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: radial-gradient(circle at top right, #1b2640 0%, var(--bg) 45%);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container { width: min(1100px, 92%); margin: 0 auto; }
+.narrow { width: min(760px, 92%); }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background: rgba(11, 15, 25, 0.84);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 50;
+}
+.nav-wrap { display: flex; align-items: center; justify-content: space-between; padding: 0.9rem 0; }
+.logo {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+.nav-links { list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0; }
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 0.45rem 0.75rem;
+  border-radius: 9px;
+}
+.nav-links a[aria-current="page"], .nav-links a:hover, .nav-links a:focus-visible {
+  color: var(--text);
+  background: rgba(110, 168, 254, 0.14);
+}
+
+.hero, .page-hero { padding: 5rem 0 3rem; }
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+.eyebrow { text-transform: uppercase; color: var(--accent-2); font-weight: 600; letter-spacing: .1em; }
+h1 { margin: 0.3rem 0 0.8rem; line-height: 1.18; font-size: clamp(1.85rem, 4.4vw, 3rem); }
+.hero-copy { color: var(--muted); max-width: 60ch; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.25rem; }
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 650;
+  border-radius: 10px;
+  padding: 0.72rem 1rem;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.btn:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 3px; }
+.btn:hover { transform: translateY(-1px); }
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent), #9d7bff);
+  color: #081121;
+  box-shadow: var(--shadow);
+}
+.btn-secondary {
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.visual-card, .card, .placeholder-box, .content-section, .final-cta .narrow {
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.visual-card { padding: 1rem; display: flex; align-items: center; justify-content: center; min-height: 230px; }
+.placeholder-box {
+  width: 100%;
+  min-height: 180px;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  border: 1px dashed rgba(255,255,255,0.25);
+  background: rgba(11, 15, 25, 0.35);
+}
+.placeholder-box.tall { min-height: 320px; }
+
+.features, .explain, .content-section { padding: 1.2rem 0 1.6rem; }
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.card { padding: 1rem; }
+h2 { font-size: clamp(1.35rem, 3vw, 2rem); margin: 0 0 .5rem; }
+h3 { margin-top: .2rem; margin-bottom: .4rem; }
+p, li { color: var(--muted); }
+.feature-list { margin: .6rem 0 0; padding-left: 1.2rem; }
+
+.alt { background: rgba(255, 255, 255, 0.02); border-radius: var(--radius); }
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.final-cta { padding: 2.2rem 0 3.2rem; }
+.final-cta .narrow { text-align: center; padding: 1.5rem; }
+.site-footer {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 1.2rem 0;
+  text-align: center;
+  color: var(--muted);
+}
+
+@media (min-width: 700px) {
+  .hero-grid { grid-template-columns: 1.1fr .9fr; align-items: center; }
+  .card-grid { grid-template-columns: repeat(2, 1fr); }
+  .screenshot-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 980px) {
+  .features, .explain, .content-section { padding: 2rem 0; }
+}
