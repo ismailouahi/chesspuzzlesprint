@@ -10,75 +10,89 @@
 <body>
   <header class="site-header" id="siteHeader">
     <div class="container nav-wrap">
-      <a class="brand" href="index.html" aria-label="Chess Puzzle Sprint home">
-        <img src="assets/logo.png" alt="Chess Puzzle Sprint app logo featuring a marble rook, electric lightning, and gold frame" class="brand-logo" />
-        <span class="brand-text">Chess Puzzle Sprint</span>
+      <a href="index.html" class="brand" aria-label="Chess Puzzle Sprint home">
+        <img src="assets/logo.png" alt="Chess Puzzle Sprint logo with a marble rook and electric lightning" />
+        <span>Chess Puzzle Sprint</span>
       </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation menu">
-        <span></span><span></span><span></span>
-      </button>
-      <nav id="mainNav" class="site-nav" aria-label="Main navigation">
-        <ul class="nav-links">
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="game.html">Game Details</a></li>
-        </ul>
-        <a class="btn btn-primary nav-cta" href="https://play.google.com/store/apps/details?id=com.ismail.chesspuzzlesprint" target="_blank" rel="noopener noreferrer">Get on Google Play</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="game.html">Game Details</a>
       </nav>
+      <a class="btn btn-primary nav-cta" href="https://play.google.com/store/apps/details?id=YOUR_APP_PACKAGE_NAME" target="_blank" rel="noopener noreferrer">Google Play</a>
     </div>
   </header>
 
   <main>
-    <section class="hero section-pad">
+    <section class="hero section">
       <div class="container hero-grid">
-        <div class="hero-content">
+        <div>
           <p class="badge">Fast Offline Chess Puzzle Training</p>
           <h1>Train Faster. Think Sharper.</h1>
-          <p class="hero-copy">Chess Puzzle Sprint is built for serious players who want tactical improvement without friction. Short sessions, practical pressure, and a massive puzzle base to build instinctive decision-making.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.ismail.chesspuzzlesprint" target="_blank" rel="noopener noreferrer">Get it on Google Play</a>
+          <p class="lead">Chess Puzzle Sprint is built for players who want sharper tactical instincts through short, intense puzzle sessions, offline access, and a massive puzzle library.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=YOUR_APP_PACKAGE_NAME" target="_blank" rel="noopener noreferrer">Get it on Google Play</a>
             <a class="btn btn-secondary" href="game.html">Explore the Game</a>
           </div>
         </div>
         <div class="hero-visual">
-          <div class="logo-frame">
-            <img src="assets/logo.png" alt="Chess Puzzle Sprint premium fantasy chess logo" class="hero-logo" />
+          <div class="logo-frame floaty">
+            <img src="assets/logo.png" alt="Chess Puzzle Sprint logo with a marble rook and electric lightning" />
+          </div>
+          <div class="stat-pill s1">200,000+ Puzzles</div>
+          <div class="stat-pill s2">Offline Training</div>
+          <div class="stat-pill s3">Fast Sessions</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Core Training Advantages</h2>
+        <div class="grid four">
+          <article class="card feature-card"><h3>Offline Mode</h3><p>Train anywhere with no connection required.</p></article>
+          <article class="card feature-card"><h3>Fast Training</h3><p>Short tactical bursts built for real schedules.</p></article>
+          <article class="card feature-card"><h3>200,000+ Puzzles</h3><p>A vast puzzle library for long-term growth.</p></article>
+          <article class="card feature-card"><h3>Intuition Training</h3><p>Repetition under pressure sharpens pattern recall.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="card quote-card">
+          <h2>Why Puzzle Sprints Work</h2>
+          <p>Strong intuition comes from fast, repeated pattern recognition under pressure. Sprint-style sessions force practical decisions and accelerate tactical memory.</p>
+          <blockquote>"Intuition is pattern recognition under pressure."</blockquote>
+        </div>
+        <div class="stack">
+          <article class="card mini"><span>01</span><h3>Pattern recognition</h3></article>
+          <article class="card mini"><span>02</span><h3>Faster candidate moves</h3></article>
+          <article class="card mini"><span>03</span><h3>Better tactical memory</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>A focused chess sprint experience</h2>
+        <div class="preview-wrap">
+          <div class="phone-mockup">
+            <div class="mock-top"></div>
+            <div class="mock-grid"></div>
+            <div class="mock-card">Puzzle: Find the tactic in 12s</div>
+            <div class="mock-bar"><span></span></div>
+            <div class="mock-line">Score 18/20 • Accuracy 90%</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-pad">
-      <div class="container">
-        <h2>Core Training Advantages</h2>
-        <div class="feature-grid">
-          <article class="card feature-card"><span class="feature-icon icon-offline" aria-hidden="true"></span><h3>Offline Mode</h3><p>No internet. No waiting. Just chess training.</p></article>
-          <article class="card feature-card"><span class="feature-icon icon-speed" aria-hidden="true"></span><h3>Fast Training</h3><p>Short sessions built for intensity and consistency.</p></article>
-          <article class="card feature-card"><span class="feature-icon icon-volume" aria-hidden="true"></span><h3>200,000+ Puzzles</h3><p>High-volume tactical positions across difficulty levels.</p></article>
-          <article class="card feature-card"><span class="feature-icon icon-intuition" aria-hidden="true"></span><h3>Intuition Training</h3><p>Build tactical intuition through repeated pattern exposure.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad">
-      <div class="container split-block">
-        <div>
-          <h2>Why Puzzle Sprints Work</h2>
-          <p>Chess intuition is not magic. It is trained recognition under pressure. Puzzle sprints compress meaningful repetition into short daily blocks so tactical patterns become familiar and fast to access during real games.</p>
-        </div>
-        <ul class="point-list" aria-label="Puzzle sprint benefits">
-          <li><strong>Pattern recognition</strong><span>Repeated motifs become instantly visible.</span></li>
-          <li><strong>Faster candidate moves</strong><span>Decision speed improves with practical tempo.</span></li>
-          <li><strong>Better tactical memory</strong><span>Frequent exposure strengthens retention.</span></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section-pad">
+    <section class="section">
       <div class="container cta-panel">
         <h2>Ready to train your tactical instinct?</h2>
         <p>Short daily sessions. Offline access. A massive puzzle library built for serious improvement.</p>
-        <div class="hero-actions center-actions">
-          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.ismail.chesspuzzlesprint" target="_blank" rel="noopener noreferrer">Get it on Google Play</a>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=YOUR_APP_PACKAGE_NAME" target="_blank" rel="noopener noreferrer">Get it on Google Play</a>
           <a class="btn btn-secondary" href="game.html">View Game Details</a>
         </div>
       </div>
@@ -86,11 +100,8 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Chess Puzzle Sprint. Short sessions. Serious improvement.</p>
-    </div>
+    <div class="container"><p>&copy; 2026 Chess Puzzle Sprint</p></div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
